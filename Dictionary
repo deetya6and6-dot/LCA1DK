@@ -1,0 +1,33 @@
+#CREATE A DICTIONARY
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(thisdict)
+
+print(thisdict["brand"])
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964,
+  "year": 2020
+}
+print(thisdict)
+
+x = thisdict.get("model")
+print(x)
+
+x = thisdict.keys()
+print(x) #before the change
+thisdict["color"] = "white"
+print(x) #after the change
+
+if "model" in thisdict:
+  print("Yes, 'model' is one of the keys in the thisdict dictionary")
+else:
+    print("No, the model is not one of the keys")
+
+thisdict["year"] = 2018
+print(thisdict)
