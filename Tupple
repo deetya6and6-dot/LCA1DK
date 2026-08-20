@@ -1,0 +1,40 @@
+#CREATE A TUPPLE
+thistuple = ("apple", "banana", "cherry")
+print("Tupple is created", thistuple)
+
+#TUPPLE WITH DUPLICATE VALUES
+thistuple = ("apple", "banana", "cherry", "apple", "cherry")
+print("Tupple can have duplicate values", thistuple)
+
+#LENGTH OF THE TUPPLE
+print("Length of the tupple is", len(thistuple))
+
+#TUPPLE WITH ONLY ONE ITEM AND PRINTING aIT'S TYPE - must put a comma or else python will not understand it
+thistuple = ("apple",)
+print(type(thistuple))
+
+#EMPTY TUPLE & DATA TYPE OF THE TUPLE
+thistuple = ()
+print(type(thistuple))
+
+
+#ACCESSING THE ELEMENTS OF TUPLE
+thistuple = ("apple", "banana", "cherry")
+print(thistuple[1])
+
+courses = ("Python" , "Data Science" , "Cloud Computing" , "Cyber Security" , "AI")
+print( courses[1])
+print( courses[3:5])
+if "Python" in courses:
+    print("Yes, python is in courses")
+else:
+    print("No, python is not in courses")
+print (courses.index("Cloud Computing"))
+print (len(courses))
+add = ("Machine Learning" , "Web Development")
+updated_courses =courses + add
+print(updated_courses)
+list_course = list(updated_courses)
+list_course.remove("Cyber Security")
+updated_courses = tuple(list_course)
+print(updated_courses)
